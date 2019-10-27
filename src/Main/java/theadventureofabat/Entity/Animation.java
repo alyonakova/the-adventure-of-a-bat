@@ -1,4 +1,4 @@
-package Entity;
+package theadventureofabat.Entity;
 
 import java.awt.image.BufferedImage;
 

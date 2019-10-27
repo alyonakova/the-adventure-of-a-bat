@@ -1,11 +1,13 @@
-package PlatformMapPack;
+package theadventureofabat.PlatformMapPack;
 
-import Main.GamePanel;
+import theadventureofabat.GamePanel;
 
-import java.awt.*;
-import java.awt.image.*;
 import javax.imageio.ImageIO;
-import java.io.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class PlatformMap {
 
@@ -65,14 +67,14 @@ public class PlatformMap {
                          platformSize,
                          platformSize
                 );
-           platforms[0][col] = new Platform(subimage, PlatformMapPack.Platform.NORMAL);
+           platforms[0][col] = new Platform(subimage, Platform.NORMAL);
            subimage = platformSet.getSubimage(
                 col * platformSize,
                    platformSize,
                    platformSize,
                    platformSize
            );
-           platforms[1][col] = new Platform(subimage, PlatformMapPack.Platform.BLOCKED);
+           platforms[1][col] = new Platform(subimage, Platform.BLOCKED);
            }
 
         } catch (Exception e) {

@@ -1,10 +1,10 @@
-package PlatformMapPack;
+package theadventureofabat.PlatformMapPack;
 
-import Main.GamePanel;
+import theadventureofabat.GamePanel;
 
-import java.awt.image.BufferedImage;
-import java.awt.*;
 import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class Background {
 

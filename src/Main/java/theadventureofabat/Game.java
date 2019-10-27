@@ -1,4 +1,4 @@
-package Main;
+package theadventureofabat;
 
 import javax.swing.*;
 

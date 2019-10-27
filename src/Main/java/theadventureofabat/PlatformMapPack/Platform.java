@@ -1,4 +1,4 @@
-package PlatformMapPack;
+package theadventureofabat.PlatformMapPack;
 
 import java.awt.image.BufferedImage;
 

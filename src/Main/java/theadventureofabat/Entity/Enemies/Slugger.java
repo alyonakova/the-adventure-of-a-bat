@@ -1,12 +1,12 @@
-package Entity.Enemies;
+package theadventureofabat.Entity.Enemies;
 
-import Entity.*;
-import PlatformMapPack.PlatformMap;
-
-import java.awt.image.BufferedImage;
-import java.awt.Graphics2D;
+import theadventureofabat.Entity.Animation;
+import theadventureofabat.Entity.Enemy;
+import theadventureofabat.PlatformMapPack.PlatformMap;
 
 import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class Slugger extends Enemy {
 
