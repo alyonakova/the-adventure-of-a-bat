@@ -1,7 +1,9 @@
-package Entity;
+package theadventureofabat.Entity;
 
-import PlatformMapPack.PlatformMap;
-import java.awt.Rectangle;
+import theadventureofabat.PlatformMapPack.Platform;
+import theadventureofabat.PlatformMapPack.PlatformMap;
+
+import java.awt.*;
 
 public abstract class MapObject {
 
@@ -92,10 +94,10 @@ public abstract class MapObject {
         int bl = platformMap.getType(bottomTile, leftTile);
         int br = platformMap.getType(bottomTile, rightTile);
 
-        topLeft = tl == PlatformMapPack.Platform.BLOCKED;
-        topRight = tr == PlatformMapPack.Platform.BLOCKED;
-        bottomLeft = bl == PlatformMapPack.Platform.BLOCKED;
-        bottomRight = br == PlatformMapPack.Platform.BLOCKED;
+        topLeft = tl == Platform.BLOCKED;
+        topRight = tr == Platform.BLOCKED;
+        bottomLeft = bl == Platform.BLOCKED;
+        bottomRight = br == Platform.BLOCKED;
 
     }
 

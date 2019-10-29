@@ -1,8 +1,8 @@
-package Entity;
+package theadventureofabat.Entity;
 
-import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class Explosion {
 

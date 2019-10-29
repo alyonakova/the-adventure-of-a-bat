@@ -1,5 +1,5 @@
-package GameState;
-import PlatformMapPack.Background;
+package theadventureofabat.GameState;
+import theadventureofabat.PlatformMapPack.Background;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;

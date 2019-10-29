@@ -1,38 +1,38 @@
-package GameState;
+package theadventureofabat.GameState;
 
-import PlatformMapPack.Background;
+import theadventureofabat.PlatformMapPack.Background;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
-public class GameOverState extends GameState{
+public class MenuState extends GameState {
 
     private Background bg;
     private int currentChoice = 0;
 
     private final String[] options = {
-            "Back to menu",
+            "Start",
+            "Help",
             "Quit"
     };
 
     private Color titleColor;
     private Font titleFont;
+    private Font subtitleFont;
     private Font font;
 
-    public GameOverState(GameStateManager gsm) {
-
+    public MenuState(GameStateManager gsm) {
         this.gsm = gsm;
-
         try {
-            bg = new Background("/Backgrounds/menubg.gif", 1);
+            bg = new Background("/Backgrounds/bgmenu.gif", 1);
             bg.setVector(-0.1, 0);
             titleColor = new Color(128, 0, 0);
-            titleFont = new Font("Century Gothic", Font.PLAIN, 28);
+            titleFont = new Font("Century Gothic", Font.PLAIN, 24);
+            subtitleFont = new Font("Century Gothic", Font.PLAIN, 20);
             font = new Font("Arial", Font.PLAIN, 12);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     public void init() {}
@@ -45,25 +45,29 @@ public class GameOverState extends GameState{
         bg.draw(g);
         g.setColor(titleColor);
         g.setFont(titleFont);
-        g.drawString("Game Over", 80, 70);
+        g.drawString("The adventure of a Bat", 35, 70);
+        g.setFont(subtitleFont);
+        g.drawString("Part 1", 130, 100);
         g.setFont(font);
-
         for (int i = 0; i < options.length; i++) {
             if (i == currentChoice) {
                 g.setColor(Color.BLACK);
-                g.drawString(">", 118, 140 + i*15);
+                g.drawString(">", 130, 140 + i*15);
             } else {
                 g.setColor(Color.RED);
             }
-            g.drawString(options[i], 129, 140 + i*15);
+            g.drawString(options[i], 145, 140 + i*15);
         }
     }
 
     private void select() {
         if (currentChoice == 0) {
-            gsm.setState(GameStateManager.MENUSTATE);
+            gsm.setState(GameStateManager.LEVELSTATE);
         }
         if (currentChoice == 1) {
+            gsm.setState(GameStateManager.HELPSTATE);
+        }
+        if (currentChoice == 2) {
             System.exit(0);
         }
     }

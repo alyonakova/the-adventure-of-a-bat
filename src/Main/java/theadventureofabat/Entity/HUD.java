@@ -1,8 +1,8 @@
-package Entity;
+package theadventureofabat.Entity;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import javax.imageio.ImageIO;
 
 public class HUD {
 

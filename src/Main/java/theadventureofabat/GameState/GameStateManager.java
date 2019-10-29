@@ -1,4 +1,4 @@
-package GameState;
+package theadventureofabat.GameState;
 
 public class GameStateManager {
 

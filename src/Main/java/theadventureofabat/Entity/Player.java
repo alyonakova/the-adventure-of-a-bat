@@ -1,11 +1,11 @@
-package Entity;
+package theadventureofabat.Entity;
 
-import PlatformMapPack.*;
+import theadventureofabat.PlatformMapPack.PlatformMap;
 
-import java.util.ArrayList;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 public class Player extends MapObject {
 

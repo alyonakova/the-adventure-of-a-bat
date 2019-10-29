@@ -1,6 +1,6 @@
-package Entity;
+package theadventureofabat.Entity;
 
-import PlatformMapPack.PlatformMap;
+import theadventureofabat.PlatformMapPack.PlatformMap;
 
 public class Enemy extends MapObject {
 
